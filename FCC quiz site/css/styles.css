@@ -1,0 +1,133 @@
+/* @keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+#animate-area {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTk2NzY3MjA5ODc0MjY5ODI2/top-10-cutest-cat-photos-of-all-time.jpg);
+  background-position: 50px 0px;
+  background-repeat: repeat;
+  background-size: 25%;
+  animation: animatedBackground 3s ease-in-out infinite alternate;
+} */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: purple;
+  background-image: linear-gradient(
+      115deg,
+      rgba(190, 133, 216, 0.4),
+      rgba(92, 67, 122, 0.9)
+    ),
+    url(https://thumbs.dreamstime.com/b/business-accounting-team-meeting-room-office-using-pen-pointing-paperwork-finance-concept-business-accounting-team-meeting-154771088.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  padding-top: 1rem;
+  width: 35%;
+  margin: 4rem auto 5rem auto;
+  border: 5px solid rgb(42, 0, 70);
+  border-radius: 25px;
+  background-color: rgb(42, 0, 70);
+}
+
+.header-text {
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.description {
+  font-family: serif;
+  font-style: italic;
+  font-weight: 200;
+}
+
+body {
+  color: white;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+label,
+.form-element p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.clue {
+  margin-left: 0.3rem;
+  font-size: 0.9rem;
+}
+.survey-form {
+  font-size: 1.3rem;
+  margin: 1.5rem 28rem 0;
+  background-color: rgb(42, 0, 70);
+  padding: 0.25rem 3rem;
+}
+.input-element,
+textarea {
+  width: 100%;
+  height: 2.2rem;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-element {
+  margin: 1.5rem 0;
+}
+
+.input-radio {
+  margin-right: 0.75rem;
+  min-height: 1rem;
+  min-width: 1rem;
+}
+
+.input-checkbox {
+  margin-bottom: 0;
+  margin-right: 0.75rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+.input-description {
+  width: 100%;
+  padding: 0.5rem;
+  min-height: 5rem;
+  min-width: 2.5rem;
+}
+
+.input-submit {
+  width: 100%;
+  min-height: 2.8rem;
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+  border-radius: 0.5rem;
+}
